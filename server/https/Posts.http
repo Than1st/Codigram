@@ -1,0 +1,43 @@
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "caption": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "image": "https://beritajatim.com/wp-content/uploads/2022/12/pexels-archie-binamira-913215-scaled.jpg",
+  "like": 10,
+  "UserId": 1,
+  "status": true
+}
+
+###
+PUT http://localhost:3000/posts/3
+Content-Type: application/json
+
+{
+  "caption": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "image": "https://beritajatim.com/wp-content/uploads/2022/12/pexels-archie-binamira-913215-scaled.jpg",
+  "like": 11,
+  "UserId": 1
+}
+
+###
+POST http://localhost:3000/posts/search
+Content-Type: application/json
+
+{
+  "keyword": "dummy"
+}
+
+###
+GET http://localhost:3000/posts
+Accept: application/json
+
+###
+DELETE http://localhost:3000/posts/1
+Accept: application/json
+
+###
+GET http://localhost:3000/posts/5
+Accept: application/json
+
+###

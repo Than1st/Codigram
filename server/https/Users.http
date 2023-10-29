@@ -1,0 +1,49 @@
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+  "username": "SulthanLRR",
+  "email": "sulthanlrr@gmail.com",
+  "password": "123456",
+  "image": "https://i.pinimg.com/1200x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
+  "role": "Admin"
+}
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "SulthanLR",
+  "password": "123"
+}
+
+###
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "username": "SulthanLR",
+  "email": "sulthanlr@gmail.com",
+  "image": "https://i.pinimg.com/1200x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+}
+
+###
+#"alamat": "Karawang Jawa barat",
+#"pendidikan": "s1|Universitas Budi Luhur|Teknik Informatika|3.76",
+#"organisasi": "Lab ICT Budi Luhur|Asisten Lab|2023-10-05|2023-10-24",
+#"kerja": "PT Kereta Commuter Indonesia|Information Technology|Magang|Membuat aplikasi website untuk internal|2023-10-04|2023-10-31"
+###
+GET http://localhost:3000/users
+Accept: application/json
+#authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoyLCJ1c2VybmFtZSI6IlN1bHRoYW5MUiIsImVtYWlsIjoic3VsdGhhbmxycnJyQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJG85N01WTVFLeHB2Zi8yZ2xIcW9OTy4uT2FnNkV6VTU0Wk44RDBTSmVWb0Z4TFd3U2xuMDBLIiwiaW1hZ2UiOiJodHRwczovL2kucGluaW1nLmNvbS8xMjAweC84Yi8xNi83YS84YjE2N2FmNjUzYzIzOTlkZDkzYjk1MmE0ODc0MDYyMC5qcGciLCJyb2xlIjoiTWVtYmVyIiwiYWxhbWF0IjoiS2FyYXdhbmcgSmF3YSBiYXJhdCIsInBlbmRpZGlrYW4iOiJzMXxVbml2ZXJzaXRhcyBCdWRpIEx1aHVyfFRla25payBJbmZvcm1hdGlrYXwzLjc2Iiwib3JnYW5pc2FzaSI6IkxhYiBJQ1QgQnVkaSBMdWh1cnxBc2lzdGVuIExhYnwyMDIzLTEwLTA1fDIwMjMtMTAtMjQiLCJrZXJqYSI6IlBUIEtlcmV0YSBDb21tdXRlciBJbmRvbmVzaWF8SW5mb3JtYXRpb24gVGVjaG5vbG9neXxNYWdhbmd8TWVtYnVhdCBhcGxpa2FzaSB3ZWJzaXRlIHVudHVrIGludGVybmFsfDIwMjMtMTAtMDR8MjAyMy0xMC0zMSIsImNyZWF0ZWRBdCI6IjIwMjMtMTAtMjJUMTU6Mzg6MTMuMzUwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMTAtMjNUMDk6MTI6MDkuMzczWiJ9LCJpYXQiOjE2OTgwNTI1MTl9.ISNNEAhkOdeLiK7TxXzrCpnNGXbPv5S-lgDTMVX69xA
+
+###
+GET http://localhost:3000/users/1
+Accept: application/json
+
+###
+DELETE http://localhost:3000/users/2
+Accept: application/json
+
+###
